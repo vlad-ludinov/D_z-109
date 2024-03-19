@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #e5e1e1;
+        }
+        .hello__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            width: 300px;
+            height: 100px;
+            padding: 30px;
+            background: #f5f8fa;
+            border: 1px solid #878787;
+            border-radius: 7px;
+        }
+        .hello__text {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border: 1px solid #878787;
+            border-radius: 3px;
+            padding: 10px 0 5px 0;
+        }
+        .hello {
+            font-size: 20px;
+        }
+        .delete__form {
+            position: absolute;
+            bottom: 25px;
+        }
+        .delete__button {
+            color: #395744;
+            width: 100%;
+            padding: 3px 10px;
+            text-align: center;
+            background: #8fd6ff;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="hello__container">
+        <div class="hello__text">
+            <a class="hello">
+                Hello {{ username }}
+            </a>
+        </div>
+        <form class="delete__form" action="/hello" method="post">
+            <input class="delete__button" type="submit" name="delete_button" value="Удалить">
+        </form>
+    </div>
+</body>
+</html>

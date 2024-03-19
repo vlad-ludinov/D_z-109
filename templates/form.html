@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для POST запроса</title>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: #e5e1e1;
+        }
+        .form__container {
+            width: 300px;
+            padding: 30px;
+            background: #f5f8fa;
+            border: 1px solid #878787;
+            border-radius: 7px;
+        }
+        .form__input {
+            position: relative;
+            margin-bottom: 10px;
+            width: 100%;
+            padding: 10px 10px 0px 3px;
+            box-sizing: border-box;
+            border: 2px solid;
+            border-radius: 3px;
+        }
+        .button__container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .form__button {
+            color: #395744;
+            width: 50%;
+            padding: 10px;
+            text-align: center;
+            background: #8fd6ff;
+            border-radius: 10px;
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="form__container">
+        <form class="form" action="/submit" method="post">
+            <input class="form__input" type="text" name="name" placeholder="Имя">
+            <input class="form__input" type="text" name="email" placeholder="Почта">
+            <div class="button__container">
+                <input class="form__button" type="submit" value="Отправить">
+            </div>
+        </form>
+    </div>
+</body>
+</html>
